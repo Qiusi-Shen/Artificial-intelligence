@@ -1,0 +1,42 @@
+1. 
+Pr(D=yes|T=yes) >= 0.3:
+Pr(D=yes) >= 0.08942
+False positive: Pr(T=no|D=yes) >= 0.00596
+False negative: Pr(T=yes|D=no) >= 0.002322
+
+2.
+1)
+The condition are LightSensor=On and DogBarking=No
+After setting the posterior values for LightSensor and DogBarking
+Using Query mode in Samiam The result is:
+
+ExpectingGuests: No
+FamilyHome: No
+DogBarking: No
+HearableBarking: No
+OutdoorLight: On
+LightSensor: On
+DogBowelTrouble: Yes
+DogOutside: Yes
+Battery: OK
+LightSensorHealth: OK
+SoundSensor: Off
+SoundSensorHealth: OK
+
+2)
+The condition are FamilyHome=Yes and ExpectingGuests=No:
+LightSensor: Off
+Battery: OK
+LightSensorHealth: OK
+SoundSensor: Off
+SoundSensorHealth: OK
+
+These values were obtained using the same method as 2a.
+
+3) 
+
+Since LightSensor and SoundSensor are d-separated so they are independent given Z.
+So the smallest set of variables Z in your network such that the two sensors are independent given Z
+Z = {Battery, FamilyHome} 
+
+4) This network is a multiply-connected network.
